@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053CF2E6FBDAA2C88A72C071 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10811E2F0B0AD7CE6764498 /* libPods.a */; };
 		280B4A8B1B96DD7C001260A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4A8A1B96DD7C001260A9 /* main.m */; };
 		280B4A8E1B96DD7C001260A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4A8D1B96DD7C001260A9 /* AppDelegate.m */; };
 		280B4A911B96DD7C001260A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4A901B96DD7C001260A9 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		280B4A991B96DD7C001260A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A971B96DD7C001260A9 /* LaunchScreen.storyboard */; };
 		280B4AA41B96DD7C001260A9 /* XTNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4AA31B96DD7C001260A9 /* XTNetworkTests.m */; };
 		280B4AAF1B96DD7C001260A9 /* XTNetworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4AAE1B96DD7C001260A9 /* XTNetworkUITests.m */; };
+		288C54121B96F20400745A6A /* XTURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 288C54111B96F20400745A6A /* XTURLRequest.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		280B4AAA1B96DD7C001260A9 /* XTNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		280B4AAE1B96DD7C001260A9 /* XTNetworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTNetworkUITests.m; sourceTree = "<group>"; };
 		280B4AB01B96DD7C001260A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288C54101B96F20400745A6A /* XTURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTURLRequest.h; sourceTree = "<group>"; };
+		288C54111B96F20400745A6A /* XTURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTURLRequest.m; sourceTree = "<group>"; };
+		5D6D213E33B74AA7CA2692A1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8CA188DDBAA3AE469585A415 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D10811E2F0B0AD7CE6764498 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053CF2E6FBDAA2C88A72C071 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BF96D823D7BC78C187C6A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D10811E2F0B0AD7CE6764498 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		280B4A7D1B96DD7C001260A9 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,8 @@
 				280B4AA21B96DD7C001260A9 /* XTNetworkTests */,
 				280B4AAD1B96DD7C001260A9 /* XTNetworkUITests */,
 				280B4A871B96DD7C001260A9 /* Products */,
+				80CBAA1A80A1B7C9AE46E4DD /* Pods */,
+				1BF96D823D7BC78C187C6A37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +119,7 @@
 		280B4A881B96DD7C001260A9 /* XTNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				288C540F1B96F1D800745A6A /* Network */,
 				280B4A8C1B96DD7C001260A9 /* AppDelegate.h */,
 				280B4A8D1B96DD7C001260A9 /* AppDelegate.m */,
 				280B4A8F1B96DD7C001260A9 /* ViewController.h */,
@@ -140,6 +159,24 @@
 			path = XTNetworkUITests;
 			sourceTree = "<group>";
 		};
+		288C540F1B96F1D800745A6A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				288C54101B96F20400745A6A /* XTURLRequest.h */,
+				288C54111B96F20400745A6A /* XTURLRequest.m */,
+			);
+			path = Network;
+			sourceTree = SOURCE_ROOT;
+		};
+		80CBAA1A80A1B7C9AE46E4DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D6D213E33B74AA7CA2692A1 /* Pods.debug.xcconfig */,
+				8CA188DDBAA3AE469585A415 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 280B4AB31B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "XTNetwork" */;
 			buildPhases = (
+				067DC860254D98A7E160E216 /* Check Pods Manifest.lock */,
 				280B4A821B96DD7C001260A9 /* Sources */,
 				280B4A831B96DD7C001260A9 /* Frameworks */,
 				280B4A841B96DD7C001260A9 /* Resources */,
+				98BA7BADD3AAAB1843FA036F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,12 +304,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		067DC860254D98A7E160E216 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		98BA7BADD3AAAB1843FA036F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		280B4A821B96DD7C001260A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				280B4A911B96DD7C001260A9 /* ViewController.m in Sources */,
+				288C54121B96F20400745A6A /* XTURLRequest.m in Sources */,
 				280B4A8E1B96DD7C001260A9 /* AppDelegate.m in Sources */,
 				280B4A8B1B96DD7C001260A9 /* main.m in Sources */,
 			);
@@ -409,9 +482,12 @@
 		};
 		280B4AB41B96DD7C001260A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6D213E33B74AA7CA2692A1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = XTNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +496,12 @@
 		};
 		280B4AB51B96DD7C001260A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA188DDBAA3AE469585A415 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = XTNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +575,7 @@
 				280B4AB51B96DD7C001260A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		280B4AB61B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "XTNetworkTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +584,7 @@
 				280B4AB81B96DD7C001260A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		280B4AB91B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "XTNetworkUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +593,7 @@
 				280B4ABB1B96DD7C001260A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
