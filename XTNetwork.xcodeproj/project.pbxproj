@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		280B4A8B1B96DD7C001260A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4A8A1B96DD7C001260A9 /* main.m */; };
+		280B4A8E1B96DD7C001260A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4A8D1B96DD7C001260A9 /* AppDelegate.m */; };
+		280B4A911B96DD7C001260A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4A901B96DD7C001260A9 /* ViewController.m */; };
+		280B4A941B96DD7C001260A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A921B96DD7C001260A9 /* Main.storyboard */; };
+		280B4A961B96DD7C001260A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A951B96DD7C001260A9 /* Assets.xcassets */; };
+		280B4A991B96DD7C001260A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A971B96DD7C001260A9 /* LaunchScreen.storyboard */; };
+		280B4AA41B96DD7C001260A9 /* XTNetworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4AA31B96DD7C001260A9 /* XTNetworkTests.m */; };
+		280B4AAF1B96DD7C001260A9 /* XTNetworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280B4AAE1B96DD7C001260A9 /* XTNetworkUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		280B4AA01B96DD7C001260A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 280B4A7E1B96DD7C001260A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 280B4A851B96DD7C001260A9;
+			remoteInfo = XTNetwork;
+		};
+		280B4AAB1B96DD7C001260A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 280B4A7E1B96DD7C001260A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 280B4A851B96DD7C001260A9;
+			remoteInfo = XTNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		280B4A861B96DD7C001260A9 /* XTNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		280B4A8A1B96DD7C001260A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		280B4A8C1B96DD7C001260A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		280B4A8D1B96DD7C001260A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		280B4A8F1B96DD7C001260A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		280B4A901B96DD7C001260A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		280B4A931B96DD7C001260A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		280B4A951B96DD7C001260A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		280B4A981B96DD7C001260A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		280B4A9A1B96DD7C001260A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280B4A9F1B96DD7C001260A9 /* XTNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		280B4AA31B96DD7C001260A9 /* XTNetworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTNetworkTests.m; sourceTree = "<group>"; };
+		280B4AA51B96DD7C001260A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		280B4AAA1B96DD7C001260A9 /* XTNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		280B4AAE1B96DD7C001260A9 /* XTNetworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTNetworkUITests.m; sourceTree = "<group>"; };
+		280B4AB01B96DD7C001260A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		280B4A831B96DD7C001260A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280B4A9C1B96DD7C001260A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280B4AA71B96DD7C001260A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		280B4A7D1B96DD7C001260A9 = {
+			isa = PBXGroup;
+			children = (
+				280B4A881B96DD7C001260A9 /* XTNetwork */,
+				280B4AA21B96DD7C001260A9 /* XTNetworkTests */,
+				280B4AAD1B96DD7C001260A9 /* XTNetworkUITests */,
+				280B4A871B96DD7C001260A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		280B4A871B96DD7C001260A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				280B4A861B96DD7C001260A9 /* XTNetwork.app */,
+				280B4A9F1B96DD7C001260A9 /* XTNetworkTests.xctest */,
+				280B4AAA1B96DD7C001260A9 /* XTNetworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		280B4A881B96DD7C001260A9 /* XTNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				280B4A8C1B96DD7C001260A9 /* AppDelegate.h */,
+				280B4A8D1B96DD7C001260A9 /* AppDelegate.m */,
+				280B4A8F1B96DD7C001260A9 /* ViewController.h */,
+				280B4A901B96DD7C001260A9 /* ViewController.m */,
+				280B4A921B96DD7C001260A9 /* Main.storyboard */,
+				280B4A951B96DD7C001260A9 /* Assets.xcassets */,
+				280B4A971B96DD7C001260A9 /* LaunchScreen.storyboard */,
+				280B4A9A1B96DD7C001260A9 /* Info.plist */,
+				280B4A891B96DD7C001260A9 /* Supporting Files */,
+			);
+			path = XTNetwork;
+			sourceTree = "<group>";
+		};
+		280B4A891B96DD7C001260A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				280B4A8A1B96DD7C001260A9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		280B4AA21B96DD7C001260A9 /* XTNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				280B4AA31B96DD7C001260A9 /* XTNetworkTests.m */,
+				280B4AA51B96DD7C001260A9 /* Info.plist */,
+			);
+			path = XTNetworkTests;
+			sourceTree = "<group>";
+		};
+		280B4AAD1B96DD7C001260A9 /* XTNetworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				280B4AAE1B96DD7C001260A9 /* XTNetworkUITests.m */,
+				280B4AB01B96DD7C001260A9 /* Info.plist */,
+			);
+			path = XTNetworkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		280B4A851B96DD7C001260A9 /* XTNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280B4AB31B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "XTNetwork" */;
+			buildPhases = (
+				280B4A821B96DD7C001260A9 /* Sources */,
+				280B4A831B96DD7C001260A9 /* Frameworks */,
+				280B4A841B96DD7C001260A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTNetwork;
+			productName = XTNetwork;
+			productReference = 280B4A861B96DD7C001260A9 /* XTNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		280B4A9E1B96DD7C001260A9 /* XTNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280B4AB61B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "XTNetworkTests" */;
+			buildPhases = (
+				280B4A9B1B96DD7C001260A9 /* Sources */,
+				280B4A9C1B96DD7C001260A9 /* Frameworks */,
+				280B4A9D1B96DD7C001260A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				280B4AA11B96DD7C001260A9 /* PBXTargetDependency */,
+			);
+			name = XTNetworkTests;
+			productName = XTNetworkTests;
+			productReference = 280B4A9F1B96DD7C001260A9 /* XTNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		280B4AA91B96DD7C001260A9 /* XTNetworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 280B4AB91B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "XTNetworkUITests" */;
+			buildPhases = (
+				280B4AA61B96DD7C001260A9 /* Sources */,
+				280B4AA71B96DD7C001260A9 /* Frameworks */,
+				280B4AA81B96DD7C001260A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				280B4AAC1B96DD7C001260A9 /* PBXTargetDependency */,
+			);
+			name = XTNetworkUITests;
+			productName = XTNetworkUITests;
+			productReference = 280B4AAA1B96DD7C001260A9 /* XTNetworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		280B4A7E1B96DD7C001260A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = LZA;
+				TargetAttributes = {
+					280B4A851B96DD7C001260A9 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					280B4A9E1B96DD7C001260A9 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 280B4A851B96DD7C001260A9;
+					};
+					280B4AA91B96DD7C001260A9 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 280B4A851B96DD7C001260A9;
+					};
+				};
+			};
+			buildConfigurationList = 280B4A811B96DD7C001260A9 /* Build configuration list for PBXProject "XTNetwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 280B4A7D1B96DD7C001260A9;
+			productRefGroup = 280B4A871B96DD7C001260A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				280B4A851B96DD7C001260A9 /* XTNetwork */,
+				280B4A9E1B96DD7C001260A9 /* XTNetworkTests */,
+				280B4AA91B96DD7C001260A9 /* XTNetworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		280B4A841B96DD7C001260A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280B4A991B96DD7C001260A9 /* LaunchScreen.storyboard in Resources */,
+				280B4A961B96DD7C001260A9 /* Assets.xcassets in Resources */,
+				280B4A941B96DD7C001260A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280B4A9D1B96DD7C001260A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280B4AA81B96DD7C001260A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		280B4A821B96DD7C001260A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280B4A911B96DD7C001260A9 /* ViewController.m in Sources */,
+				280B4A8E1B96DD7C001260A9 /* AppDelegate.m in Sources */,
+				280B4A8B1B96DD7C001260A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280B4A9B1B96DD7C001260A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280B4AA41B96DD7C001260A9 /* XTNetworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		280B4AA61B96DD7C001260A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280B4AAF1B96DD7C001260A9 /* XTNetworkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		280B4AA11B96DD7C001260A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 280B4A851B96DD7C001260A9 /* XTNetwork */;
+			targetProxy = 280B4AA01B96DD7C001260A9 /* PBXContainerItemProxy */;
+		};
+		280B4AAC1B96DD7C001260A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 280B4A851B96DD7C001260A9 /* XTNetwork */;
+			targetProxy = 280B4AAB1B96DD7C001260A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		280B4A921B96DD7C001260A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280B4A931B96DD7C001260A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		280B4A971B96DD7C001260A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280B4A981B96DD7C001260A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		280B4AB11B96DD7C001260A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		280B4AB21B96DD7C001260A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		280B4AB41B96DD7C001260A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XTNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		280B4AB51B96DD7C001260A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XTNetwork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		280B4AB71B96DD7C001260A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XTNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTNetwork.app/XTNetwork";
+			};
+			name = Debug;
+		};
+		280B4AB81B96DD7C001260A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XTNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTNetwork.app/XTNetwork";
+			};
+			name = Release;
+		};
+		280B4ABA1B96DD7C001260A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XTNetworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XTNetwork;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		280B4ABB1B96DD7C001260A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XTNetworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetworkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XTNetwork;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		280B4A811B96DD7C001260A9 /* Build configuration list for PBXProject "XTNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280B4AB11B96DD7C001260A9 /* Debug */,
+				280B4AB21B96DD7C001260A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		280B4AB31B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "XTNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280B4AB41B96DD7C001260A9 /* Debug */,
+				280B4AB51B96DD7C001260A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		280B4AB61B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "XTNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280B4AB71B96DD7C001260A9 /* Debug */,
+				280B4AB81B96DD7C001260A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		280B4AB91B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "XTNetworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280B4ABA1B96DD7C001260A9 /* Debug */,
+				280B4ABB1B96DD7C001260A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 280B4A7E1B96DD7C001260A9 /* Project object */;
+}
