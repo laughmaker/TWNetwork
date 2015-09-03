@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.source_files = "Network/*"
   s.frameworks   = "UIKit", "CoreGraphics"
 
-  s.dependency "BlocksKit", "~> 1.4"
+  #s.dependency "BlocksKit", "~> 1.4"
 
 end

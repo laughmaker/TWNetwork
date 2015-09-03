@@ -7,7 +7,6 @@
 //
 
 #import "XTURLRequest.h"
-#import "BlocksKit.h"
 
 // block self
 #define XT_WeakSelf  __weak typeof (self)weakSelf = self;
@@ -35,7 +34,6 @@
 
 + (void)get:(NSString *)urlPath params:(NSDictionary *)params completionHandler:(void (^)(id, NSError *))completionHandler
 {
-    XT_WeakSelf;
     NSMutableString *paramsString = @"?".mutableCopy;
     for (NSString *key in params.allKeys) {
         [paramsString appendFormat:@"%@=%@&", key, params[key]];
@@ -58,9 +56,9 @@
         }
 
         if (completionHandler) {
-          [weakSelf bk_performBlock:^{
-              completionHandler(responseObject, error);
-          } onQueue:dispatch_get_main_queue() afterDelay:0];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completionHandler(responseObject, error);
+            });
         }
     }];
     [task resume];
@@ -68,12 +66,11 @@
 
 + (void)post:(NSString *)urlPath params:(NSDictionary *)params completionHandler:(void (^)(id data, NSError *error))completionHandler
 {
-    XT_WeakSelf;
     [[self class] post:urlPath params:params tag:-1 completionHandler:^(id data, NSError *error, NSInteger tag) {
         if (completionHandler) {
-            [weakSelf bk_performBlock:^{
+            dispatch_async(dispatch_get_main_queue(), ^{
                 completionHandler(data, error);
-            } onQueue:dispatch_get_main_queue() afterDelay:0];
+            });
         }
     }];
 }
@@ -94,9 +91,9 @@
         }
         
         if (completionHandler) {
-            [self bk_performBlock:^{
+            dispatch_async(dispatch_get_main_queue(), ^{
                 completionHandler(responseObject, error, tag);
-            } onQueue:dispatch_get_main_queue() afterDelay:0];
+            });
         }
     }];
     [task resume];
@@ -116,18 +113,18 @@
         NSData *data = [NSData dataWithContentsOfURL:location];
         [[self class] saveData:data atPath:toPath];
         
-        [self bk_performBlock:^{
-          if (location) {
-              if (completionHandler) {
-                  completionHandler(toPath, error);
-              }
-          }
-          else {
-              if (completionHandler) {
-                  completionHandler(nil, error);
-              }
-          }
-        } onQueue:dispatch_get_main_queue() afterDelay:0];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (location) {
+                if (completionHandler) {
+                    completionHandler(toPath, error);
+                }
+            }
+            else {
+                if (completionHandler) {
+                    completionHandler(nil, error);
+                }
+            }
+        });
     }];
     [task resume];
 }
@@ -181,9 +178,8 @@
 
 + (void)handleUploadWithData:(NSData *)data error:(NSError *)error compleTionHanlder:(void (^)(id data, NSError *error))completionHandler
 {
-    XT_WeakSelf;
     if (completionHandler) {
-        [weakSelf bk_performBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             if (error) {
                 completionHandler(nil, error);
             }
@@ -198,7 +194,7 @@
                     completionHandler(responseObject, err);
                 }
             }
-        } onQueue:dispatch_get_main_queue() afterDelay:0];
+        });
     }
 }
 
@@ -249,9 +245,9 @@
     }
     
     if (completionHandler) {
-        [self bk_performBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             completionHandler(responseObject, error);
-        } onQueue:dispatch_get_main_queue() afterDelay:0];
+        });
     }
 }
 
@@ -329,9 +325,9 @@
 {
     if (self.progress) {
         XT_WeakSelf;
-        [self bk_performBlock:^(id obj) {
+        dispatch_async(dispatch_get_main_queue(), ^{
             weakSelf.progress((float)totalBytesWritten/totalBytesExpectedToWrite);
-        } onQueue:dispatch_get_main_queue() afterDelay:0];
+        });
     }
 }
 
@@ -348,9 +344,9 @@
 {
     if (self.progress) {
         XT_WeakSelf;
-        [self bk_performBlock:^(id obj) {
+        dispatch_async(dispatch_get_main_queue(), ^{
             weakSelf.progress((float)totalBytesSent/totalBytesExpectedToSend);
-        } onQueue:dispatch_get_main_queue() afterDelay:0];
+        });
     }
 }
 
@@ -358,11 +354,11 @@
 {
     if (self.downloadComptionHandler) {
         XT_WeakSelf;
-        [self bk_performBlock:^(id obj) {
+        dispatch_async(dispatch_get_main_queue(), ^{
             if (weakSelf.downloadComptionHandler) {
                 weakSelf.downloadComptionHandler(self.downloadDestinationPath, error);
             }
-        } onQueue:dispatch_get_main_queue() afterDelay:0];
+        });
     }
 }
 
