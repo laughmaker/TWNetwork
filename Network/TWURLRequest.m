@@ -6,13 +6,13 @@
 //  Copyright © 2015年 LeZhiAn. All rights reserved.
 //
 
-#import "XTURLRequest.h"
+#import "TWURLRequest.h"
 
 // block self
 #define XT_WeakSelf  __weak typeof (self)weakSelf = self;
 #define XT_StrongSelf typeof(weakSelf) __strong strongSelf = weakSelf;
 
-@interface XTURLRequest ()<NSURLSessionDataDelegate, NSURLSessionTaskDelegate>
+@interface TWURLRequest ()<NSURLSessionDataDelegate, NSURLSessionTaskDelegate>
 /// 下载成功后代理
 @property (copy, nonatomic) void (^downloadComptionHandler) (NSString *aFilePath, NSError *error);
 
@@ -25,11 +25,11 @@
 @end
 
 
-@implementation XTURLRequest
+@implementation TWURLRequest
 
 + (instancetype)request
 {
-    return [[XTURLRequest alloc] init];
+    return [[TWURLRequest alloc] init];
 }
 
 + (void)get:(NSString *)urlPath params:(NSDictionary *)params completionHandler:(void (^)(id, NSError *))completionHandler

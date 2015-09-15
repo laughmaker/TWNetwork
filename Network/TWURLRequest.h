@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, OFileType) {
 };
 
 
-@interface XTURLRequest : NSObject <NSURLSessionDownloadDelegate>
+@interface TWURLRequest : NSObject <NSURLSessionDownloadDelegate>
 
 /// 设置超时时间
 //@property (assign, nonatomic) NSTimeInterval timeout;
