@@ -23,15 +23,6 @@ typedef NS_ENUM(NSUInteger, OFileType) {
 
 @interface TWURLRequest : NSObject <NSURLSessionDownloadDelegate>
 
-/// 设置超时时间
-//@property (assign, nonatomic) NSTimeInterval timeout;
-
-/// 设置缓存策略
-//@property (assign, nonatomic) NSURLRequestCachePolicy cachePolicy;
-
-/// 设置请求方式
-//@property (strong, nonatomic) NSString *httpMethod;
-
 /// 类方法返回实例
 + (instancetype)request;
 

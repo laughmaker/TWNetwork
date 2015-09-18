@@ -13,7 +13,7 @@
 		280B4A941B96DD7C001260A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A921B96DD7C001260A9 /* Main.storyboard */; };
 		280B4A961B96DD7C001260A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A951B96DD7C001260A9 /* Assets.xcassets */; };
 		280B4A991B96DD7C001260A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A971B96DD7C001260A9 /* LaunchScreen.storyboard */; };
-		288C54121B96F20400745A6A /* TWURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 288C54111B96F20400745A6A /* TWURLRequest.m */; settings = {ASSET_TAGS = (); }; };
+		286AA5AE1BABBC9B00EEA6D1 /* TWURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5AD1BABBC9B00EEA6D1 /* TWURLRequest.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		280B4A861B96DD7C001260A9 /* TWNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		280B4A861B96DD7C001260A9 /* TWNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		280B4A8A1B96DD7C001260A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		280B4A8C1B96DD7C001260A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		280B4A8D1B96DD7C001260A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,10 +44,10 @@
 		280B4A951B96DD7C001260A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280B4A981B96DD7C001260A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280B4A9A1B96DD7C001260A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		280B4A9F1B96DD7C001260A9 /* TWNetwork.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWNetwork.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		280B4AAA1B96DD7C001260A9 /* TWNetwork.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWNetwork.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		288C54101B96F20400745A6A /* TWURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWURLRequest.h; sourceTree = "<group>"; };
-		288C54111B96F20400745A6A /* TWURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWURLRequest.m; sourceTree = "<group>"; };
+		280B4A9F1B96DD7C001260A9 /* TWNetworkDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWNetworkDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		280B4AAA1B96DD7C001260A9 /* TWNetworkDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWNetworkDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		286AA5AC1BABBC9B00EEA6D1 /* TWURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWURLRequest.h; sourceTree = "<group>"; };
+		286AA5AD1BABBC9B00EEA6D1 /* TWURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWURLRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,8 @@
 		280B4A7D1B96DD7C001260A9 = {
 			isa = PBXGroup;
 			children = (
-				280B4A881B96DD7C001260A9 /* TWNetwork */,
+				286AA5AB1BABBC9B00EEA6D1 /* TWNetwork */,
+				280B4A881B96DD7C001260A9 /* TWNetworkDemo */,
 				280B4A871B96DD7C001260A9 /* Products */,
 				1BF96D823D7BC78C187C6A37 /* Frameworks */,
 			);
@@ -94,17 +95,16 @@
 		280B4A871B96DD7C001260A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				280B4A861B96DD7C001260A9 /* TWNetwork.app */,
-				280B4A9F1B96DD7C001260A9 /* TWNetwork.xctest */,
-				280B4AAA1B96DD7C001260A9 /* TWNetwork.xctest */,
+				280B4A861B96DD7C001260A9 /* TWNetworkDemo.app */,
+				280B4A9F1B96DD7C001260A9 /* TWNetworkDemo.xctest */,
+				280B4AAA1B96DD7C001260A9 /* TWNetworkDemo.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		280B4A881B96DD7C001260A9 /* TWNetwork */ = {
+		280B4A881B96DD7C001260A9 /* TWNetworkDemo */ = {
 			isa = PBXGroup;
 			children = (
-				288C540F1B96F1D800745A6A /* Network */,
 				280B4A8C1B96DD7C001260A9 /* AppDelegate.h */,
 				280B4A8D1B96DD7C001260A9 /* AppDelegate.m */,
 				280B4A8F1B96DD7C001260A9 /* ViewController.h */,
@@ -115,7 +115,7 @@
 				280B4A9A1B96DD7C001260A9 /* Info.plist */,
 				280B4A891B96DD7C001260A9 /* Supporting Files */,
 			);
-			path = TWNetwork;
+			path = TWNetworkDemo;
 			sourceTree = "<group>";
 		};
 		280B4A891B96DD7C001260A9 /* Supporting Files */ = {
@@ -126,21 +126,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		288C540F1B96F1D800745A6A /* Network */ = {
+		286AA5AB1BABBC9B00EEA6D1 /* TWNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				288C54101B96F20400745A6A /* TWURLRequest.h */,
-				288C54111B96F20400745A6A /* TWURLRequest.m */,
+				286AA5AC1BABBC9B00EEA6D1 /* TWURLRequest.h */,
+				286AA5AD1BABBC9B00EEA6D1 /* TWURLRequest.m */,
 			);
-			path = Network;
-			sourceTree = SOURCE_ROOT;
+			path = TWNetwork;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		280B4A851B96DD7C001260A9 /* TWNetwork */ = {
+		280B4A851B96DD7C001260A9 /* TWNetworkDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 280B4AB31B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetwork" */;
+			buildConfigurationList = 280B4AB31B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkDemo" */;
 			buildPhases = (
 				280B4A821B96DD7C001260A9 /* Sources */,
 				280B4A831B96DD7C001260A9 /* Frameworks */,
@@ -150,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = TWNetwork;
+			name = TWNetworkDemo;
 			productName = XTNetwork;
-			productReference = 280B4A861B96DD7C001260A9 /* TWNetwork.app */;
+			productReference = 280B4A861B96DD7C001260A9 /* TWNetworkDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		280B4A9E1B96DD7C001260A9 /* TWNetworkTests */ = {
+		280B4A9E1B96DD7C001260A9 /* TWNetworkDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 280B4AB61B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkTests" */;
+			buildConfigurationList = 280B4AB61B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkDemoTests" */;
 			buildPhases = (
 				280B4A9B1B96DD7C001260A9 /* Sources */,
 				280B4A9C1B96DD7C001260A9 /* Frameworks */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				280B4AA11B96DD7C001260A9 /* PBXTargetDependency */,
 			);
-			name = TWNetworkTests;
+			name = TWNetworkDemoTests;
 			productName = XTNetworkTests;
-			productReference = 280B4A9F1B96DD7C001260A9 /* TWNetwork.xctest */;
+			productReference = 280B4A9F1B96DD7C001260A9 /* TWNetworkDemo.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		280B4AA91B96DD7C001260A9 /* TWNetworkUITests */ = {
+		280B4AA91B96DD7C001260A9 /* TWNetworkDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 280B4AB91B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkUITests" */;
+			buildConfigurationList = 280B4AB91B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkDemoUITests" */;
 			buildPhases = (
 				280B4AA61B96DD7C001260A9 /* Sources */,
 				280B4AA71B96DD7C001260A9 /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				280B4AAC1B96DD7C001260A9 /* PBXTargetDependency */,
 			);
-			name = TWNetworkUITests;
+			name = TWNetworkDemoUITests;
 			productName = XTNetworkUITests;
-			productReference = 280B4AAA1B96DD7C001260A9 /* TWNetwork.xctest */;
+			productReference = 280B4AAA1B96DD7C001260A9 /* TWNetworkDemo.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 280B4A811B96DD7C001260A9 /* Build configuration list for PBXProject "TWNetwork" */;
+			buildConfigurationList = 280B4A811B96DD7C001260A9 /* Build configuration list for PBXProject "TWNetworkDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -226,9 +226,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				280B4A851B96DD7C001260A9 /* TWNetwork */,
-				280B4A9E1B96DD7C001260A9 /* TWNetworkTests */,
-				280B4AA91B96DD7C001260A9 /* TWNetworkUITests */,
+				280B4A851B96DD7C001260A9 /* TWNetworkDemo */,
+				280B4A9E1B96DD7C001260A9 /* TWNetworkDemoTests */,
+				280B4AA91B96DD7C001260A9 /* TWNetworkDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,8 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286AA5AE1BABBC9B00EEA6D1 /* TWURLRequest.m in Sources */,
 				280B4A911B96DD7C001260A9 /* ViewController.m in Sources */,
-				288C54121B96F20400745A6A /* TWURLRequest.m in Sources */,
 				280B4A8E1B96DD7C001260A9 /* AppDelegate.m in Sources */,
 				280B4A8B1B96DD7C001260A9 /* main.m in Sources */,
 			);
@@ -291,12 +291,12 @@
 /* Begin PBXTargetDependency section */
 		280B4AA11B96DD7C001260A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 280B4A851B96DD7C001260A9 /* TWNetwork */;
+			target = 280B4A851B96DD7C001260A9 /* TWNetworkDemo */;
 			targetProxy = 280B4AA01B96DD7C001260A9 /* PBXContainerItemProxy */;
 		};
 		280B4AAC1B96DD7C001260A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 280B4A851B96DD7C001260A9 /* TWNetwork */;
+			target = 280B4A851B96DD7C001260A9 /* TWNetworkDemo */;
 			targetProxy = 280B4AAB1B96DD7C001260A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -406,11 +406,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				INFOPLIST_FILE = "$(SRCROOT)/TWNetwork/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TWNetworkDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetwork;
-				PRODUCT_NAME = TWNetwork;
+				PRODUCT_NAME = TWNetworkDemo;
 			};
 			name = Debug;
 		};
@@ -419,11 +419,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				INFOPLIST_FILE = "$(SRCROOT)/TWNetwork/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TWNetworkDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetwork;
-				PRODUCT_NAME = TWNetwork;
+				PRODUCT_NAME = TWNetworkDemo;
 			};
 			name = Release;
 		};
@@ -434,8 +434,8 @@
 				INFOPLIST_FILE = XTNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetworkTests;
-				PRODUCT_NAME = TWNetwork;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWNetwork.app/TWNetwork";
+				PRODUCT_NAME = TWNetworkDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWNetworkDemo.app/TWNetworkDemo";
 			};
 			name = Debug;
 		};
@@ -446,8 +446,8 @@
 				INFOPLIST_FILE = XTNetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetworkTests;
-				PRODUCT_NAME = TWNetwork;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWNetwork.app/TWNetwork";
+				PRODUCT_NAME = TWNetworkDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWNetworkDemo.app/TWNetworkDemo";
 			};
 			name = Release;
 		};
@@ -457,7 +457,7 @@
 				INFOPLIST_FILE = XTNetworkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetworkUITests;
-				PRODUCT_NAME = TWNetwork;
+				PRODUCT_NAME = TWNetworkDemo;
 				TEST_TARGET_NAME = XTNetwork;
 				USES_XCTRUNNER = YES;
 			};
@@ -469,7 +469,7 @@
 				INFOPLIST_FILE = XTNetworkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTNetworkUITests;
-				PRODUCT_NAME = TWNetwork;
+				PRODUCT_NAME = TWNetworkDemo;
 				TEST_TARGET_NAME = XTNetwork;
 				USES_XCTRUNNER = YES;
 			};
@@ -478,7 +478,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		280B4A811B96DD7C001260A9 /* Build configuration list for PBXProject "TWNetwork" */ = {
+		280B4A811B96DD7C001260A9 /* Build configuration list for PBXProject "TWNetworkDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				280B4AB11B96DD7C001260A9 /* Debug */,
@@ -487,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		280B4AB31B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetwork" */ = {
+		280B4AB31B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				280B4AB41B96DD7C001260A9 /* Debug */,
@@ -496,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		280B4AB61B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkTests" */ = {
+		280B4AB61B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				280B4AB71B96DD7C001260A9 /* Debug */,
@@ -505,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		280B4AB91B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkUITests" */ = {
+		280B4AB91B96DD7C001260A9 /* Build configuration list for PBXNativeTarget "TWNetworkDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				280B4ABA1B96DD7C001260A9 /* Debug */,
