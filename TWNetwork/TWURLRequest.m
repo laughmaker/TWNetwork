@@ -34,11 +34,16 @@
 
 + (void)get:(NSString *)urlPath params:(NSDictionary *)params completionHandler:(void (^)(id, NSError *))completionHandler
 {
-    NSMutableString *paramsString = @"?".mutableCopy;
+    NSMutableString *paramsString = @"".mutableCopy;
     for (NSString *key in params.allKeys) {
         [paramsString appendFormat:@"%@=%@&", key, params[key]];
     }
-    NSString *url = [NSString stringWithFormat:@"%@%@", urlPath, paramsString];
+    NSString *getParamsString = @"";
+    if (paramsString.length > 0) {
+        getParamsString = [@"?" stringByAppendingString:[paramsString substringToIndex:paramsString.length - 1]];
+    }
+    
+    NSString *url = [NSString stringWithFormat:@"%@%@", urlPath, getParamsString];
     url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     request.HTTPMethod = @"GET";

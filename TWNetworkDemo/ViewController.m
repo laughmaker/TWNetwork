@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TWURLRequest.h"
+
 
 @interface ViewController ()
 
@@ -16,7 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+
+    NSDictionary *params = @{@"name": @"三水", @"age": @"33"};
+    
+    NSString *urlPath = @"http://www.3water3.com";
+    [TWURLRequest get:urlPath params:nil completionHandler:^(id data, NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

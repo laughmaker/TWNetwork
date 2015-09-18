@@ -26,6 +26,13 @@ typedef NS_ENUM(NSUInteger, OFileType) {
 /// 类方法返回实例
 + (instancetype)request;
 
+/**
+ *  GET请求
+ *
+ *  @param urlPath           请求地址
+ *  @param params            请求参数
+ *  @param completionHandler 完成代理回调
+ */
 + (void)get:(NSString *)urlPath params:(NSDictionary *)params completionHandler:(void (^) (id data, NSError *error))completionHandler;
 
 /**
