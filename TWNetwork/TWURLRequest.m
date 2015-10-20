@@ -233,7 +233,7 @@
     [request setValue:contentType forHTTPHeaderField:@"Content-Type"];
     [request setValue:[NSString stringWithFormat:@"%zd", [bodyData length]] forHTTPHeaderField:@"Content-Length"];
     [request setHTTPBody:bodyData];
-    [request setHTTPMethod:@"GET"];
+    [request setHTTPMethod:@"POST"];
     
     return request;
 }
