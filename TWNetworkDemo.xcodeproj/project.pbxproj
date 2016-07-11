@@ -13,7 +13,8 @@
 		280B4A941B96DD7C001260A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A921B96DD7C001260A9 /* Main.storyboard */; };
 		280B4A961B96DD7C001260A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A951B96DD7C001260A9 /* Assets.xcassets */; };
 		280B4A991B96DD7C001260A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280B4A971B96DD7C001260A9 /* LaunchScreen.storyboard */; };
-		286AA5AE1BABBC9B00EEA6D1 /* TWURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5AD1BABBC9B00EEA6D1 /* TWURLRequest.m */; settings = {ASSET_TAGS = (); }; };
+		2849ACE61D336B0900B150FC /* TWUploadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2849ACE51D336B0900B150FC /* TWUploadFile.m */; };
+		286AA5AE1BABBC9B00EEA6D1 /* TWURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5AD1BABBC9B00EEA6D1 /* TWURLRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		280B4A9A1B96DD7C001260A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		280B4A9F1B96DD7C001260A9 /* TWNetworkDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWNetworkDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		280B4AAA1B96DD7C001260A9 /* TWNetworkDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWNetworkDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2849ACE41D336B0900B150FC /* TWUploadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWUploadFile.h; sourceTree = "<group>"; };
+		2849ACE51D336B0900B150FC /* TWUploadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWUploadFile.m; sourceTree = "<group>"; };
 		286AA5AC1BABBC9B00EEA6D1 /* TWURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWURLRequest.h; sourceTree = "<group>"; };
 		286AA5AD1BABBC9B00EEA6D1 /* TWURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWURLRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +134,8 @@
 			children = (
 				286AA5AC1BABBC9B00EEA6D1 /* TWURLRequest.h */,
 				286AA5AD1BABBC9B00EEA6D1 /* TWURLRequest.m */,
+				2849ACE41D336B0900B150FC /* TWUploadFile.h */,
+				2849ACE51D336B0900B150FC /* TWUploadFile.m */,
 			);
 			path = TWNetwork;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				286AA5AE1BABBC9B00EEA6D1 /* TWURLRequest.m in Sources */,
 				280B4A911B96DD7C001260A9 /* ViewController.m in Sources */,
 				280B4A8E1B96DD7C001260A9 /* AppDelegate.m in Sources */,
+				2849ACE61D336B0900B150FC /* TWUploadFile.m in Sources */,
 				280B4A8B1B96DD7C001260A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
